@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lato:wght@300&family=Roboto:wght@300;400;700&family=Satisfy&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+font-family: 'Lato', sans-serif;
+
+}
+
+
+.main-container{
+  height: 200vh;
+  width: 100%;
+}
+.main-container .Section-1-MainPage{
+height: 100vh;
+}
+
+
+
+.main-container .navbar{
+  height: 50px;
+ display: flex;
+ align-items: center;
+ justify-content:space-between;
+background-color: black;
+
+}
+.main-container .navbar .lakbay-logo-container{
+display: flex;
+align-items: center;
+justify-content: center;
+padding-left: 6rem;
+color: #fdbb2d;
+}
+
+.main-container .navbar .nav-lists{
+display: flex;
+gap: 3rem;
+list-style: none;
+color: white;
+}
+
+.main-container .Section-1-MainPage .main-page-container{
+position: relative;
+height: 100vh;
+width: 100%;
+display: grid;
+align-items: center;
+justify-content: center;
+}
+
+.main-container .navbar .BookNow-container{
+  padding-right: 6rem;
+} 
+
+.main-container .navbar .BookNow-container button{
+  border-radius: 15px;
+  padding: 5px;
+  width: 6rem;
+  outline: none;
+  border: none;
+  background-color: #fdbb2d;
+  font-weight: 1000;
+}
+.main-container .Section-1-MainPage .main-page-container video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.main-container .Section-1-MainPage .main-page-container::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 112.5vh;
+ 
+  background: rgba(0, 0, 0, 0.2); /* Dark overlay color */
+}
+.main-container .Section-1-MainPage .main-page-container .page-description-container{
+  color: azure;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: grid;
+  grid-gap: 1rem;
+text-align: center;
+}
+.main-container .Section-1-MainPage .main-page-container .page-description-container .title-container{
+  margin-top: 4rem;
+}
+.main-container .Section-1-MainPage .main-page-container .page-description-container .title-container h1{
+  font-size: 30px;
+}
+
+.main-container .Section-1-MainPage .main-page-container .page-description-container .title-container h1 span{
+  font-size: 90px;
+font-weight: bold;
+color: #fdbb2d;
+}
+
+.main-container .Section-1-MainPage .main-page-container .phrase-container{
+  font-weight: 600;
+  font-size: medium;
+}
+
+
+
+
+
+.main-container .Section-1-MainPage .main-page-container  .feature-tours-container .font{
+  padding-left: 1rem;
+}
+.main-container .Section-1-MainPage .main-page-container  .feature-tours-container .tours{
+  color:#fdbb2d;
+}
+
+
+
+.Section-2-halfPage{
+  height: 100vh;
+}
+
+.Section-2-halfPage .main-container .upper-half-container{
+  height: 1200px;
+  display: grid;
+grid-template-columns: repeat(3,1fr);
+}
+
+.Section-2-halfPage .main-container .upper-half-container .pic-left{
+  background-color: aquamarine;
+}
+
+.Section-2-halfPage .main-container .upper-half-container .pic-middle{
+  background-color: #fdbb2d;
+}
+.Section-2-halfPage .main-container .upper-half-container .pic-right {
+  background-color: bisque;
+}
+
