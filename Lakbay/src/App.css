@@ -6,7 +6,9 @@
 font-family: 'Lato', sans-serif;
 
 }
-
+body{
+  background-color: black;
+}
 
 .main-container{
   height: 200vh;
@@ -106,9 +108,6 @@ color: #fdbb2d;
 }
 
 
-
-
-
 .main-container .Section-1-MainPage .main-page-container  .feature-tours-container .font{
   padding-left: 1rem;
 }
@@ -120,6 +119,7 @@ color: #fdbb2d;
 
 .Section-2-halfPage{
   height: 100vh;
+  margin-top: 20rem;
 }
 
 .Section-2-halfPage .main-container .upper-half-container{
@@ -127,15 +127,51 @@ color: #fdbb2d;
   display: grid;
 grid-template-columns: repeat(3,1fr);
 }
-
-.Section-2-halfPage .main-container .upper-half-container .pic-left{
-  background-color: aquamarine;
+.Section-2-halfPage .main-container .upper-half-container .pic{
+position: relative;
 }
+.Section-2-halfPage .main-container .upper-half-container .pic .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* adjust the overlay color and transparency as desired */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* add a smooth transition effect */
+}
+.Section-2-halfPage .main-container .upper-half-container .pic .text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; /* set the text color */
+  font-size: 20px; /* set the text font size */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* add a smooth transition effect */
+}
+
+.Section-2-halfPage .main-container .upper-half-container .pic:hover .overlay{
+  opacity: 1;
+}
+.Section-2-halfPage .main-container .upper-half-container .pic:hover .text{
+  opacity: 1;
+}
+.Section-2-halfPage .main-container .upper-half-container .pic-left{
+ background-image: url(src/assets/Left.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
 
 .Section-2-halfPage .main-container .upper-half-container .pic-middle{
-  background-color: #fdbb2d;
+ background-image: url(src/assets/middle.jpg);
+ background-size: cover;
+ background-position: center;
 }
 .Section-2-halfPage .main-container .upper-half-container .pic-right {
-  background-color: bisque;
+  background-image: url(src/assets/Right.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
