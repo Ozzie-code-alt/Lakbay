@@ -243,3 +243,38 @@ z-index: 2;
   top: 0;
   transform: rotateZ(180deg);
 }
+
+
+/*SECTION 3*/
+
+.Section-3-Video{
+  height: 150vh;
+  width: 100%;
+}
+.Section-3-Video .main-container{
+ height: 100vh;
+}
+
+.Section-3-Video .main-container .message-container{
+  color: white;
+  padding-left: 6rem;
+}
+.Section-3-Video .main-container .message-container h1{
+  font-size: 90px;
+  color: #fdbb2d;
+}
+
+.Section-3-Video .main-container .message-container p{
+  font-size: 25px;
+}
+.hidden{
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}

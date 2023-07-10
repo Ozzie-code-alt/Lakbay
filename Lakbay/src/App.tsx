@@ -1,8 +1,35 @@
 import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import ReactPlayer from "react-player";
+import { useEffect } from 'react';
+
+
 function App() {
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  
   return (
+
     <>
       <div className="main-container">
         <section className="Section-1-MainPage">
@@ -13,14 +40,14 @@ function App() {
               </div>
               <h1 className="Lakbay-text"> LAKBAY</h1>
             </div>
-            <ul className="nav-lists">
+            <ul className="nav-lists hidden">
               <li>Home</li>
               <li>Destination</li>
               <li>Offers</li>
               <li>About Us</li>
             </ul>
 
-            <div className="BookNow-container">
+            <div className="BookNow-container hidden">
               <button className="BookNow">Book Now</button>
             </div>
           </nav>
@@ -33,7 +60,7 @@ function App() {
               ></source>
             </video>
             <div className="page-description-container">
-              <div className="title-container">
+              <div className="title-container hidden">
                 <h1>
                   WELCOME TO <br /> <span>Philippines</span>
                 </h1>
@@ -41,7 +68,7 @@ function App() {
               <div className="img-container">
                 <img src="" alt="" />
               </div>
-              <div className="phrase-container">
+              <div className="phrase-container hidden">
                 <p>
                   Embark on a journey like no other through pristine
                   <br />
@@ -50,7 +77,7 @@ function App() {
                 </p>
               </div>
 
-              <div className="feature-tours-container">
+              <div className="feature-tours-container hidden">
                 <h1>
                   Featured <span className="tours">Tours</span>{" "}
                   <span className="font">
@@ -142,6 +169,32 @@ function App() {
                   </div>
               </div>
           </div>
+        </section>
+
+
+        <section className="Section-3-Video">
+          <div className="main-container">
+
+            
+            <ReactPlayer url={"src/assets/Section3.mp4"} 
+            controls ={true} 
+            playing={false} 
+            width={"100%"}
+            height={"100vh"}    
+            />   
+
+
+            <div className="message-container hidden">
+              <h1>Mabuhay</h1> <br />
+              <p>Immerse in a tropical paradise. Explore Breathtaking destinations <br />
+                discover hidden gems, and create unforgetable experiences. Dive <br />
+                into crystal clear waters, uncover ancient ruinsand savor perfect <br />
+                culinary delights. Join our Curated tours for an extraordinary adventure
+              </p>
+              </div>       
+          </div>
+
+          
         </section>
       </div>
     </>
