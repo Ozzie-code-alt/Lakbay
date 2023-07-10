@@ -76,11 +76,71 @@ function App() {
               <div className="pic-right pic">
               <div className="overlay"></div>
               <div className="text">Where to Go</div>
-              </div>
-
-              {/*Slider portion*/}
-              <div className="slider-container"></div>
+              </div>       
             </div>
+            {/*Slider portion*/}
+            <div className="slider-container">
+                  <div className="slide-track">
+                        {/*IMAGE SLIDES*/}
+                        <div className="slide">
+                          <img src="src/Logo/Cebu_Pacific_logo_PNG4.png" alt="" />
+                        </div>
+                        <div className="slide">
+                          <img src="src/Logo/Philippine_Airlines_transparent_background.png" alt="" />
+                        </div>
+                        <div className="slide">
+                          <img src="src/Logo/2GO-Logo.png" alt="" />
+                        </div>
+                        <div className="slide">
+                          <img src="src/Logo/Cebgo-Logo.png" alt="" />
+                        </div>
+                        <div className="slide">
+                          <img src="src/Logo/AirAsia_X_logo_PNG2.png" alt="" />
+                        </div>
+                        <div className="slide">
+                          <img src="src/Logo/Qatar_Airways_logo_PNG2.png" alt="" />
+                        </div>
+                        <div className="slide">
+                          <img src="src/Logo/Wendys-Logo.png" alt="" />
+                        </div>
+                        <div className="slide">
+                          <img src="src/Logo/Jollibee-Logo-PNG3.png" alt="" />
+                        </div>
+                        <div className="slide">
+                          <img src="src/Logo/Subway_logo_PNG4.png" alt="" />
+                        </div>
+
+
+                        {/*Doubled Pictures */}
+                        <div className="slide">
+                          <img src="src/Logo/Cebu_Pacific_logo_PNG4.png" alt="" />
+                        </div>
+                        <div className="slide">
+                          <img src="src/Logo/Philippine_Airlines_transparent_background.png" alt="" />
+                        </div>
+                        <div className="slide">
+                          <img src="src/Logo/2GO-Logo.png" alt="" />
+                        </div>
+                        <div className="slide">
+                          <img src="src/Logo/Cebgo-Logo.png" alt="" />
+                        </div>
+                        <div className="slide">
+                          <img src="src/Logo/AirAsia_X_logo_PNG2.png" alt="" />
+                        </div>
+                        <div className="slide">
+                          <img src="src/Logo/Qatar_Airways_logo_PNG2.png" alt="" />
+                        </div>
+                        <div className="slide">
+                          <img src="src/Logo/Wendys-Logo.png" alt="" />
+                        </div>
+                        <div className="slide">
+                          <img src="src/Logo/Jollibee-Logo-PNG3.png" alt="" />
+                        </div>
+                        <div className="slide">
+                          <img src="src/Logo/Subway_logo_PNG4.png" alt="" />
+                        </div>
+                  </div>
+              </div>
           </div>
         </section>
       </div>
