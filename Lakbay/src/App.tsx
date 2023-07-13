@@ -196,6 +196,17 @@ function App() {
 
           
         </section>
+
+
+        <section className="Section-4-SliderBackground">
+            <div className="main-container">
+              
+            </div>
+        </section>
+
+
+
+
       </div>
     </>
   );
