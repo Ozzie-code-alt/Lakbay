@@ -7,7 +7,7 @@ font-family: 'Lato', sans-serif;
 
 }
 body{
-  background-color: black;
+  background-color: black !important;
 }
 
 .main-container{
@@ -183,6 +183,7 @@ position: relative;
   width: 90;
   display: grid;
   position: relative;
+  overflow: hidden;
   background: linear-gradient(8deg, rgba(20,21,31,1) 0%, rgba(20,21,31,0) 54%, rgba(41,42,55,1) 94%);
 }
 .Section-2-halfPage .main-container  .slider-container .slide-track{
@@ -277,4 +278,25 @@ z-index: 2;
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+
+
+
+.Section-4-SliderBackground{
+  height: 100vh;
+}
+
+.Section-4-SliderBackground .carousel .carousel-inner .carousel-item{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.Section-4-SliderBackground .carousel .carousel-inner .carousel-item img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+object-position: center;
+
 }

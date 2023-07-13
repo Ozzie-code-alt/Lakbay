@@ -2,24 +2,24 @@ import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import ReactPlayer from "react-player";
-import { useEffect } from 'react';
-
+import { useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.js";
 
 function App() {
-
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         console.log(entry);
         if (entry.isIntersecting) {
-          entry.target.classList.add('show');
+          entry.target.classList.add("show");
         } else {
-          entry.target.classList.remove('show');
+          entry.target.classList.remove("show");
         }
       });
     });
 
-    const hiddenElements = document.querySelectorAll('.hidden');
+    const hiddenElements = document.querySelectorAll(".hidden");
     hiddenElements.forEach((el) => observer.observe(el));
 
     return () => {
@@ -27,9 +27,7 @@ function App() {
     };
   }, []);
 
-  
   return (
-
     <>
       <div className="main-container">
         <section className="Section-1-MainPage">
@@ -97,116 +95,153 @@ function App() {
                 <div className="text">Travel Tips & info</div>
               </div>
               <div className="pic-middle pic">
-              <div className="overlay"></div>
-              <div className="text">What to do</div>
+                <div className="overlay"></div>
+                <div className="text">What to do</div>
               </div>
               <div className="pic-right pic">
-              <div className="overlay"></div>
-              <div className="text">Where to Go</div>
-              </div>       
+                <div className="overlay"></div>
+                <div className="text">Where to Go</div>
+              </div>
             </div>
             {/*Slider portion*/}
             <div className="slider-container">
-                  <div className="slide-track">
-                        {/*IMAGE SLIDES*/}
-                        <div className="slide">
-                          <img src="src/Logo/Cebu_Pacific_logo_PNG4.png" alt="" />
-                        </div>
-                        <div className="slide">
-                          <img src="src/Logo/Philippine_Airlines_transparent_background.png" alt="" />
-                        </div>
-                        <div className="slide">
-                          <img src="src/Logo/2GO-Logo.png" alt="" />
-                        </div>
-                        <div className="slide">
-                          <img src="src/Logo/Cebgo-Logo.png" alt="" />
-                        </div>
-                        <div className="slide">
-                          <img src="src/Logo/AirAsia_X_logo_PNG2.png" alt="" />
-                        </div>
-                        <div className="slide">
-                          <img src="src/Logo/Qatar_Airways_logo_PNG2.png" alt="" />
-                        </div>
-                        <div className="slide">
-                          <img src="src/Logo/Wendys-Logo.png" alt="" />
-                        </div>
-                        <div className="slide">
-                          <img src="src/Logo/Jollibee-Logo-PNG3.png" alt="" />
-                        </div>
-                        <div className="slide">
-                          <img src="src/Logo/Subway_logo_PNG4.png" alt="" />
-                        </div>
+              <div className="slide-track">
+                {/*IMAGE SLIDES*/}
+                <div className="slide">
+                  <img src="src/Logo/Cebu_Pacific_logo_PNG4.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img
+                    src="src/Logo/Philippine_Airlines_transparent_background.png"
+                    alt=""
+                  />
+                </div>
+                <div className="slide">
+                  <img src="src/Logo/2GO-Logo.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="src/Logo/Cebgo-Logo.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="src/Logo/AirAsia_X_logo_PNG2.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="src/Logo/Qatar_Airways_logo_PNG2.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="src/Logo/Wendys-Logo.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="src/Logo/Jollibee-Logo-PNG3.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="src/Logo/Subway_logo_PNG4.png" alt="" />
+                </div>
 
-
-                        {/*Doubled Pictures */}
-                        <div className="slide">
-                          <img src="src/Logo/Cebu_Pacific_logo_PNG4.png" alt="" />
-                        </div>
-                        <div className="slide">
-                          <img src="src/Logo/Philippine_Airlines_transparent_background.png" alt="" />
-                        </div>
-                        <div className="slide">
-                          <img src="src/Logo/2GO-Logo.png" alt="" />
-                        </div>
-                        <div className="slide">
-                          <img src="src/Logo/Cebgo-Logo.png" alt="" />
-                        </div>
-                        <div className="slide">
-                          <img src="src/Logo/AirAsia_X_logo_PNG2.png" alt="" />
-                        </div>
-                        <div className="slide">
-                          <img src="src/Logo/Qatar_Airways_logo_PNG2.png" alt="" />
-                        </div>
-                        <div className="slide">
-                          <img src="src/Logo/Wendys-Logo.png" alt="" />
-                        </div>
-                        <div className="slide">
-                          <img src="src/Logo/Jollibee-Logo-PNG3.png" alt="" />
-                        </div>
-                        <div className="slide">
-                          <img src="src/Logo/Subway_logo_PNG4.png" alt="" />
-                        </div>
-                  </div>
+                {/*Doubled Pictures */}
+                <div className="slide">
+                  <img src="src/Logo/Cebu_Pacific_logo_PNG4.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img
+                    src="src/Logo/Philippine_Airlines_transparent_background.png"
+                    alt=""
+                  />
+                </div>
+                <div className="slide">
+                  <img src="src/Logo/2GO-Logo.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="src/Logo/Cebgo-Logo.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="src/Logo/AirAsia_X_logo_PNG2.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="src/Logo/Qatar_Airways_logo_PNG2.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="src/Logo/Wendys-Logo.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="src/Logo/Jollibee-Logo-PNG3.png" alt="" />
+                </div>
+                <div className="slide">
+                  <img src="src/Logo/Subway_logo_PNG4.png" alt="" />
+                </div>
               </div>
+            </div>
           </div>
         </section>
-
 
         <section className="Section-3-Video">
           <div className="main-container">
-
-            
-            <ReactPlayer url={"src/assets/Section3.mp4"} 
-            controls ={true} 
-            playing={false} 
-            width={"100%"}
-            height={"100vh"}    
-            />   
-
+            <ReactPlayer
+              url={"src/assets/Section3.mp4"}
+              controls={true}
+              playing={false}
+              width={"100%"}
+              height={"100vh"}
+            />
 
             <div className="message-container hidden">
               <h1>Mabuhay</h1> <br />
-              <p>Immerse in a tropical paradise. Explore Breathtaking destinations <br />
-                discover hidden gems, and create unforgetable experiences. Dive <br />
-                into crystal clear waters, uncover ancient ruinsand savor perfect <br />
-                culinary delights. Join our Curated tours for an extraordinary adventure
+              <p>
+                Immerse in a tropical paradise. Explore Breathtaking
+                destinations <br />
+                discover hidden gems, and create unforgetable experiences. Dive{" "}
+                <br />
+                into crystal clear waters, uncover ancient ruinsand savor
+                perfect <br />
+                culinary delights. Join our Curated tours for an extraordinary
+                adventure
               </p>
-              </div>       
+            </div>
           </div>
-
-          
         </section>
-
 
         <section className="Section-4-SliderBackground">
-            <div className="main-container">
-              
+          <div
+            id="carouselExampleFade"
+            className="carousel slide carousel-fade"
+          >
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img
+                  src="src/assets/Left.jpg"
+                  
+                  alt="..."
+                />
+              </div>
+              <div className="carousel-item">
+                <img
+                  src="src/assets/middle.jpg"
+                  
+                  alt="..."
+                />
+              </div>
+              <div className="carousel-item">
+                <img
+                  src="src/assets/Right.jpg"
+                
+                  alt="..."
+                />
+              </div>
             </div>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="next"
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
         </section>
-
-
-
-
       </div>
     </>
   );
