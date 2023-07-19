@@ -11,7 +11,7 @@ body{
 }
 
 .main-container{
-  height: 200vh;
+  /* height: 200vh; */
   width: 100%;
 }
 .main-container .Section-1-MainPage{
@@ -300,3 +300,83 @@ object-fit: cover;
 object-position: center;
 
 }
+
+
+.Section-5-DiscoverPH{
+  height: 100vh;
+}
+
+.Section-5-DiscoverPH .main-container{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.Section-5-DiscoverPH .main-container .header-container{
+  padding:1rem ;
+  text-align: center;
+}
+
+.Section-5-DiscoverPH .main-container .header-container .title-container h1{
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #fdbb2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.Section-5-DiscoverPH .main-container .header-container .subtext-container p{
+  color: white;
+}
+
+.Section-6-Vertical-Images{
+  height: 100vh;
+}
+
+.Section-6-Vertical-Images .main-container{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Section-6-Vertical-Images .main-container .description-container{
+height: 60vh;
+display: flex;
+
+}
+.Section-6-Vertical-Images .main-container .description-container .img-container{
+  padding-right: 2rem;
+}
+.Section-6-Vertical-Images .main-container .description-container .img-container img{
+height: 400px;
+object-fit: cover;
+object-position: center;
+border-radius: 15px;
+}
+
+.Section-6-Vertical-Images .main-container .description-container .title-container{
+padding: 5rem;
+}
+
+.Section-6-Vertical-Images .main-container .description-container .title-container .title h1{
+  font-size: 70px;
+  font-weight:900;
+  background: -webkit-linear-gradient(#6068b5, #1e0ae8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.Section-6-Vertical-Images .main-container .description-container .title-container .description-container p{
+  color: whitesmoke;
+  padding-top: 1rem;
+  font-weight: 600;
+}
+
+
+
+
+
+

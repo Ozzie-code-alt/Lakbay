@@ -207,25 +207,13 @@ function App() {
           >
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img
-                  src="src/assets/Left.jpg"
-                  
-                  alt="..."
-                />
+                <img src="src/assets/Left.jpg" alt="..." />
               </div>
               <div className="carousel-item">
-                <img
-                  src="src/assets/middle.jpg"
-                  
-                  alt="..."
-                />
+                <img src="src/assets/middle.jpg" alt="..." />
               </div>
               <div className="carousel-item">
-                <img
-                  src="src/assets/Right.jpg"
-                
-                  alt="..."
-                />
+                <img src="src/assets/Right.jpg" alt="..." />
               </div>
             </div>
             <button
@@ -240,6 +228,68 @@ function App() {
               ></span>
               <span className="visually-hidden">Next</span>
             </button>
+          </div>
+        </section>
+
+        <section className="Section-5-DiscoverPH">
+          <div className="main-container">
+            <div className="header-container">
+              <div className="title-container hidden">
+                <h1>
+                  DISCOVER THE JOY <br /> OF THE PHILIPPINES
+                </h1>
+              </div>
+              <div className="subtext-container hidden">
+                <p>
+                  experience pure bliss in captivating beauty of the Philipines
+                  - a destination that promises <br />
+                  endless joy and unforgettable adventures
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="Section-6-Vertical-Images">
+          <div className="main-container grid">
+            <div className="description-container hidden">
+              <div className="img-container">
+                <img src="src/Section-6-Images/whale.jpeg" alt="whale" />
+              </div>
+
+              <div className="title-container">
+                <div className="title">
+                  <h1>
+                    {" "}
+                    Whale <br />
+                    Sharks
+                  </h1>
+                </div>
+                <div className="description-container">
+                  <p>
+                    Dive into an unforgettable adventure and swim <br />
+                    alongside gentle giants - the magnificent whale <br />
+                    sharks !
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="TubatahaReefs-container">
+              <div className="img-container">
+                <img src="" alt="" />
+              </div>
+
+              <div className="description-container">
+                <div className="title-container">
+                  <h1>Tubataha Reefs</h1>
+                </div>
+                <div className="definition-container">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </section>
       </div>
