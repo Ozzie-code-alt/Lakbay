@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log(entry);
+        // console.log(entry);
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
         } else {
@@ -265,7 +265,7 @@ function App() {
                     Sharks
                   </h1>
                 </div>
-                <div className="description-container">
+                <div className="definition-container">
                   <p>
                     Dive into an unforgettable adventure and swim <br />
                     alongside gentle giants - the magnificent whale <br />
@@ -275,17 +275,20 @@ function App() {
               </div>
             </div>
 
-            <div className="TubatahaReefs-container">
-              <div className="img-container">
-                <img src="" alt="" />
+            <div className="TubatahaReefs-container hidden">
+              <div className="img-container item">
+                <img src="src/Section-6-Images/reef.jpeg" alt="" />
               </div>
 
-              <div className="description-container">
+              <div className="tub-description-container item">
                 <div className="title-container">
                   <h1>Tubataha Reefs</h1>
                 </div>
                 <div className="definition-container">
-                  <p></p>
+                  <p>Explore the captivating wonders of <br />
+                  Tubataha Reefs, a <span>UNESCO WORLD HERITAGE SITE</span> <br />
+                  teeming with vibrant coral reefs and a diverse array <br />
+                   of marine life in the Philipines</p>
                 </div>
               </div>
             </div>

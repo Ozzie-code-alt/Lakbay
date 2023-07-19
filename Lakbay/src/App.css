@@ -331,13 +331,14 @@ object-position: center;
 }
 
 .Section-6-Vertical-Images{
-  height: 100vh;
+  height: 500vh;
 }
 
 .Section-6-Vertical-Images .main-container{
   display: grid;
   justify-content: center;
   align-items: center;
+  gap:20rem;
 }
 
 
@@ -363,16 +364,17 @@ padding: 5rem;
 .Section-6-Vertical-Images .main-container .description-container .title-container .title h1{
   font-size: 70px;
   font-weight:900;
-  background: -webkit-linear-gradient(#6068b5, #1e0ae8);
+  background: -webkit-linear-gradient(#06bef6, #68b0da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.Section-6-Vertical-Images .main-container .description-container .title-container .description-container p{
+.Section-6-Vertical-Images .main-container .description-container .title-container .definition-container p{
   color: whitesmoke;
   padding-top: 1rem;
   font-weight: 600;
+  
 }
 
 
@@ -380,3 +382,40 @@ padding: 5rem;
 
 
 
+.Section-6-Vertical-Images .main-container .TubatahaReefs-container{
+height: 60vh;
+display: flex;
+}
+
+
+.Section-6-Vertical-Images .main-container .TubatahaReefs-container .img-container img{
+  height: 400px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 15px;
+}
+
+.Section-6-Vertical-Images .main-container .TubatahaReefs-container .tub-description-container{
+  padding: 5rem;
+}
+
+.Section-6-Vertical-Images .main-container .TubatahaReefs-container .tub-description-container .title-container h1{
+  font-size: 70px;
+  font-weight:900;
+  background: -webkit-linear-gradient(#6068b5, #1e0ae8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.Section-6-Vertical-Images .main-container .TubatahaReefs-container .tub-description-container .definition-container{
+color: whitesmoke;
+font-weight: 600;
+}
+
+
+.Section-6-Vertical-Images .main-container .TubatahaReefs-container .item:nth-child(1){
+  order: 2;
+}
+.Section-6-Vertical-Images .main-container .TubatahaReefs-container .item:nth-child(2){
+  order: 1;
+}
