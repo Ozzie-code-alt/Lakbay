@@ -378,10 +378,6 @@ padding: 5rem;
 }
 
 
-
-
-
-
 .Section-6-Vertical-Images .main-container .TubatahaReefs-container{
 height: 60vh;
 display: flex;
@@ -493,4 +489,93 @@ font-weight: 600;
 
 .Section-6-Vertical-Images .main-container .festivities-container .link:nth-child(1){
 order: 2;
+}
+
+
+.Section-6-Vertical-Images .main-container .the-rice-container{
+  height: 60vh;
+  display: flex;
+}
+
+.Section-6-Vertical-Images .main-container .the-rice-container .rice-img-container img{
+  height: 400px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 15px;
+}
+.Section-6-Vertical-Images .main-container .the-rice-container .rice-description-container{
+  padding: 5rem;
+}
+.Section-6-Vertical-Images .main-container .the-rice-container .rice-description-container .rice-title-container h1{
+  font-size: 70px;
+  font-weight:900;
+  background: -webkit-linear-gradient(#00755e, #31e9c5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.Section-6-Vertical-Images .main-container .the-rice-container .rice-description-container .rice-definition-container{
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+
+
+.Section-6-Vertical-Images  .footer-container{
+  background-image: url("src/Section-6-Images/footer.jpeg");
+  height: 70vh;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+ 
+}
+.Section-6-Vertical-Images  .footer-container .main-container{
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.Section-6-Vertical-Images  .footer-container .main-container .footer-description-container .header-container h1{
+color: whitesmoke;
+font-weight: 600;
+font-size: 70px;
+}
+
+.Section-6-Vertical-Images  .footer-container .main-container .footer-description-container .subtxt-container{
+  color: black;
+}
+
+.Section-6-Vertical-Images  .footer-container .main-container .footer-description-container{
+z-index: 1;
+}
+
+.Section-6-Vertical-Images  .footer-container .main-container .btn-container{
+  z-index: 1;
+}
+
+
+.Section-6-Vertical-Images  .footer-container .main-container .btn-container button{
+  border-radius: 15px;
+  padding: 10px 30px;
+  border-style:solid;
+  border-width: 1px;
+  border-color: whitesmoke;
+  background-color: transparent;
+  color: whitesmoke;
+}
+.Section-6-Vertical-Images  .footer-container::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Set the background color with opacity using RGBA */
+  background-color: rgba(170, 89, 19, 0.829); /* Here, 0.5 represents 50% opacity */
+  /* Apply a blur filter to the overlay */
+  backdrop-filter: blur(4px); /* Adjust the blur value as needed */
+  
 }

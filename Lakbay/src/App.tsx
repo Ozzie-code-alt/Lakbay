@@ -340,8 +340,50 @@ function App() {
                 </div>
               </div>
             </div>
+
+            <div className="the-rice-container hidden">
+              <div className="rice-img-container">
+                <img src="src/Section-6-Images/rice.jpeg" alt="" />
+              </div>
+
+              <div className="rice-description-container">
+                <div className="rice-title-container">
+                  <h1>THE RICE <br /> TERRACES</h1>
+                </div>
+
+                <div className="rice-definition-container">
+                  <p>Marvel at the engineering marvel of the Rice <br />
+                  Terraces, awe-inspiring landscapes carved into the <br />
+                  mountainside by indigenous communities in the  <br />
+                  Philippines, showcasing centuries old farming <br />
+                  techniques and Breathtaking panoramas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="footer-container">
+            <div className="main-container">
+              <div className="footer-description-container">
+                <div className="header-container">
+                  <h1>START YOUR <br /> JOURNEY TODAY!</h1>
+                </div>
+                <div className="subtxt-container">
+                  <p>Embrace the Philippiines, live life to the fullest, and uncover a world of <br />
+                  pristine beaches, vibrant festivals, mesmerizing waterfalls, andawe-inspiring <br />
+                  landscapes like never before!</p>
+                </div>
+              </div>
+
+              <div className="btn-container">
+                <button>Book now</button>
+              </div>
+
+            </div>
           </div>
         </section>
+
       </div>
     </>
   );
