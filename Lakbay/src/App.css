@@ -34,6 +34,7 @@ align-items: center;
 justify-content: center;
 padding-left: 6rem;
 color: #fdbb2d;
+height: 100%;
 }
 
 .main-container .navbar .nav-lists{
@@ -41,6 +42,21 @@ display: flex;
 gap: 3rem;
 list-style: none;
 color: white;
+justify-content: center;
+align-items: center;
+margin-bottom: 0;
+}
+.main-container .navbar .nav-lists li{
+  border-bottom: 1px solid transparent;
+ transition: 1s ease-in-out;
+}
+
+.main-container .navbar .nav-lists li:hover{
+ border-bottom: 1px solid #fdbb2d;
+  border-width: 1px;
+  cursor: pointer;
+ 
+  color: #fdbb2d
 }
 
 .main-container .Section-1-MainPage .main-page-container{
@@ -54,8 +70,13 @@ justify-content: center;
 
 .main-container .navbar .BookNow-container{
   padding-right: 6rem;
+  justify-self: center;
+  align-content: center;
+  
 } 
-
+.main-container .navbar .BookNow-container button:hover{
+  background-color: #fcb045;
+}
 .main-container .navbar .BookNow-container button{
   border-radius: 15px;
   padding: 5px;
@@ -64,6 +85,7 @@ justify-content: center;
   border: none;
   background-color: #fdbb2d;
   font-weight: 1000;
+  transition: 1s ease-in-out;
 }
 .main-container .Section-1-MainPage .main-page-container video{
   height: 100%;
@@ -106,11 +128,22 @@ color: #fdbb2d;
   font-weight: 600;
   font-size: medium;
 }
-
+.main-container .Section-1-MainPage .main-page-container  .feature-tours-container h1{
+  transition: 1s ease-in-out;
+}
+.main-container .Section-1-MainPage .main-page-container  .feature-tours-container h1:hover, .font{
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #fdbb2d;
+}
 
 .main-container .Section-1-MainPage .main-page-container  .feature-tours-container .font{
   padding-left: 1rem;
+  transform: translateY(0);
+  transition: 1s ease-in-out;
+ 
 }
+
 .main-container .Section-1-MainPage .main-page-container  .feature-tours-container .tours{
   color:#fdbb2d;
 }
@@ -549,6 +582,7 @@ font-size: 70px;
 
 .Section-6-Vertical-Images  .footer-container .main-container .footer-description-container{
 z-index: 1;
+padding-left: 3rem;
 }
 
 .Section-6-Vertical-Images  .footer-container .main-container .btn-container{

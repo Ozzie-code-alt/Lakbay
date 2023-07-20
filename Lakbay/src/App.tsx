@@ -6,7 +6,12 @@ import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 
+
 function App() {
+
+
+
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -38,7 +43,8 @@ function App() {
               </div>
               <h1 className="Lakbay-text"> LAKBAY</h1>
             </div>
-            <ul className="nav-lists hidden">
+            <ul className="nav-lists hidden "
+            >
               <li>Home</li>
               <li>Destination</li>
               <li>Offers</li>
@@ -207,13 +213,13 @@ function App() {
           >
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img src="src/assets/Left.jpg" alt="..." />
+                <img src="src/assets/1.jpeg" alt="..." />
               </div>
               <div className="carousel-item">
-                <img src="src/assets/middle.jpg" alt="..." />
+                <img src="src/assets/2.jpeg" alt="..." />
               </div>
               <div className="carousel-item">
-                <img src="src/assets/Right.jpg" alt="..." />
+                <img src="src/assets/3.jpeg" alt="..." />
               </div>
             </div>
             <button
