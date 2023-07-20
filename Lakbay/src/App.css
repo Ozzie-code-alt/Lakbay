@@ -419,3 +419,78 @@ font-weight: 600;
 .Section-6-Vertical-Images .main-container .TubatahaReefs-container .item:nth-child(2){
   order: 1;
 }
+
+
+.Section-6-Vertical-Images .main-container .PristineBeach-container{
+height: 60vh;
+display: flex;
+}
+.Section-6-Vertical-Images .main-container .PristineBeach-container .img-container-Beach{
+  padding-right: 2rem;
+}
+
+.Section-6-Vertical-Images .main-container .PristineBeach-container .img-container-Beach img{
+  height: 400px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 15px;
+}
+
+.Section-6-Vertical-Images .main-container .PristineBeach-container .beach-description-container{
+  padding: 5rem;
+}
+
+
+.Section-6-Vertical-Images .main-container .PristineBeach-container .beach-description-container .title-container h1{
+  font-size: 70px;
+  font-weight:900;
+  background: -webkit-linear-gradient(#fcb045, #fd1d1d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.Section-6-Vertical-Images .main-container .PristineBeach-container .beach-description-container .beach-definition-container{
+  padding-top: 2rem;
+}
+.Section-6-Vertical-Images .main-container .PristineBeach-container .beach-description-container .beach-definition-container p{
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+
+
+.Section-6-Vertical-Images .main-container .festivities-container{
+  height: 60vh;
+  display: flex;
+}
+
+.Section-6-Vertical-Images .main-container .festivities-container .festive-img-container img{
+  height: 400px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 15px;
+}
+
+
+.Section-6-Vertical-Images .main-container .festivities-container .festive-description-container{
+  padding: 5rem;
+}
+
+.Section-6-Vertical-Images .main-container .festivities-container .festive-description-container .title-container h1{
+  font-size: 70px;
+  font-weight:900;
+  background: -webkit-linear-gradient(#ffffff, #fdbb2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.Section-6-Vertical-Images .main-container .festivities-container .festive-description-container  .festive-definition-container p{
+color: white;
+font-weight: 600;
+}
+
+
+.Section-6-Vertical-Images .main-container .festivities-container .link:nth-child(1){
+order: 2;
+}

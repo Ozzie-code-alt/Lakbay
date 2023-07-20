@@ -285,14 +285,61 @@ function App() {
                   <h1>Tubataha Reefs</h1>
                 </div>
                 <div className="definition-container">
-                  <p>Explore the captivating wonders of <br />
-                  Tubataha Reefs, a <span>UNESCO WORLD HERITAGE SITE</span> <br />
-                  teeming with vibrant coral reefs and a diverse array <br />
-                   of marine life in the Philipines</p>
+                  <p>
+                    Explore the captivating wonders of <br />
+                    Tubataha Reefs, a <span>
+                      UNESCO WORLD HERITAGE SITE
+                    </span>{" "}
+                    <br />
+                    teeming with vibrant coral reefs and a diverse array <br />
+                    of marine life in the Philipines
+                  </p>
                 </div>
               </div>
             </div>
 
+            <div className="PristineBeach-container hidden">
+              <div className="img-container-Beach">
+                <img src="src/Section-6-Images/beach.jpeg" alt="" />
+              </div>
+
+              <div className="beach-description-container">
+                <div className="title-container">
+                  <h1>Pristine Beaches</h1>
+                </div>
+                <div className="beach-definition-container">
+                  <p>
+                    Immerse yourself in paradise as you bask in the <br />
+                    sun kissed shored and torquoise waters of the <br />
+                    Philippines' Breathtaking beaches , offering idyllic <br />
+                    escapes and unforgetable coastal experience
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="festivities-container hidden">
+              <div className="festive-img-container link">
+                <img src="src/Section-6-Images/festive.jpeg" alt="" />
+              </div>
+              <div className="festive-description-container link">
+                <div className="title-container ">
+                  <h1>
+                    THE <br /> FESTIVITIES
+                  </h1>
+                </div>
+                <div className="festive-definition-container ">
+                  <p>
+                    {" "}
+                    Embrace on a cultural journey like no other as you <br />
+                    witness the vibrant and lively Philippine Festivals. <br />
+                    A kaleidoscope of color,music , dance and traditional <br />
+                    celebrations that showcase the country's rich <br />
+                    heritage
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
