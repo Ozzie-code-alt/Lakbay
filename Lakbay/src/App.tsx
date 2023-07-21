@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        // console.log(entry);
+        console.log(entry);
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
         } else {
@@ -37,7 +37,7 @@ function App() {
       <div className="main-container">
         <section className="Section-1-MainPage">
           <nav className="navbar">
-            <div className="lakbay-logo-container">
+            <div className="lakbay-logo-container hidden">
               <div className="lakbay-logo-img-container">
                 <img src="" alt="" />
               </div>
@@ -258,12 +258,12 @@ function App() {
 
         <section className="Section-6-Vertical-Images">
           <div className="main-container grid">
-            <div className="description-container hidden">
-              <div className="img-container">
+            <div className="description-container width">
+              <div className="img-container hidden">
                 <img src="src/Section-6-Images/whale.jpeg" alt="whale" />
               </div>
 
-              <div className="title-container">
+              <div className="title-container hidden">
                 <div className="title">
                   <h1>
                     {" "}
@@ -281,7 +281,7 @@ function App() {
               </div>
             </div>
 
-            <div className="TubatahaReefs-container hidden">
+            <div className="TubatahaReefs-container width">
               <div className="img-container item">
                 <img src="src/Section-6-Images/reef.jpeg" alt="" />
               </div>
@@ -304,7 +304,7 @@ function App() {
               </div>
             </div>
 
-            <div className="PristineBeach-container hidden">
+            <div className="PristineBeach-container width">
               <div className="img-container-Beach">
                 <img src="src/Section-6-Images/beach.jpeg" alt="" />
               </div>
@@ -324,7 +324,7 @@ function App() {
               </div>
             </div>
 
-            <div className="festivities-container hidden">
+            <div className="festivities-container width">
               <div className="festive-img-container link">
                 <img src="src/Section-6-Images/festive.jpeg" alt="" />
               </div>
@@ -347,7 +347,7 @@ function App() {
               </div>
             </div>
 
-            <div className="the-rice-container hidden">
+            <div className="the-rice-container width">
               <div className="rice-img-container">
                 <img src="src/Section-6-Images/rice.jpeg" alt="" />
               </div>
