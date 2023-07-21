@@ -384,10 +384,12 @@ object-position: center;
 .Section-6-Vertical-Images .main-container .description-container{
 height: 60vh;
 display: flex;
-
+align-items: center;
+justify-content: center;
 }
 .Section-6-Vertical-Images .main-container .description-container .img-container{
   padding-right: 2rem;
+  width: 500px;
 }
 .Section-6-Vertical-Images .main-container .description-container .img-container img{
 max-width: 100%;
@@ -420,8 +422,12 @@ padding: 5rem;
 .Section-6-Vertical-Images .main-container .TubatahaReefs-container{
 height: 60vh;
 display: flex;
+align-items: center;
+justify-content: center;
 }
-
+.Section-6-Vertical-Images .main-container .TubatahaReefs-container .img-container{
+  width: 500px;
+}
 
 .Section-6-Vertical-Images .main-container .TubatahaReefs-container .img-container img{
   max-width: 100%;
@@ -459,9 +465,12 @@ font-weight: 600;
 .Section-6-Vertical-Images .main-container .PristineBeach-container{
 height: 60vh;
 display: flex;
+justify-content: center;
+align-items: center;
 }
 .Section-6-Vertical-Images .main-container .PristineBeach-container .img-container-Beach{
   padding-right: 2rem;
+  width: 500px;
 }
 
 .Section-6-Vertical-Images .main-container .PristineBeach-container .img-container-Beach img{
@@ -497,6 +506,11 @@ display: flex;
 .Section-6-Vertical-Images .main-container .festivities-container{
   height: 60vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Section-6-Vertical-Images .main-container .festivities-container .festive-img-container{
+  width: 500px;
 }
 
 .Section-6-Vertical-Images .main-container .festivities-container .festive-img-container img{
@@ -534,8 +548,13 @@ order: 2;
 .Section-6-Vertical-Images .main-container .the-rice-container{
   height: 60vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20rem;
 }
-
+.Section-6-Vertical-Images .main-container .the-rice-container .rice-img-container{
+  width: 500px;
+}
 .Section-6-Vertical-Images .main-container .the-rice-container .rice-img-container img{
   max-width: 100%;
   object-fit: contain;
@@ -563,11 +582,11 @@ order: 2;
 
 .Section-6-Vertical-Images  .footer-container{
   background-image: url("src/Section-6-Images/footer.jpeg");
-  height: 70vh;
+  height: 40vh;
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
- 
+
 }
 .Section-6-Vertical-Images  .footer-container .main-container{
   grid-template-columns: repeat(2,1fr);
@@ -655,7 +674,27 @@ padding-right: 0;
       height: 200px;
     }
 
+    .Section-6-Vertical-Images .main-container .festivities-container{
+      display: flex;
+      flex-direction: column;
+     align-items: center;
+      justify-content: center;
+    }
 
+    .Section-6-Vertical-Images .main-container .festivities-container .festive-img-container img{
+      height: 200px;
+    }
+
+    .Section-6-Vertical-Images .main-container .the-rice-container{
+      display: flex;
+      flex-direction: column;
+     align-items: center;
+      justify-content: center;
+    }
+
+    .Section-6-Vertical-Images .main-container .the-rice-container .rice-img-container img{
+        height: 200px;
+    }
     .main-container .navbar .lakbay-logo-container{
       padding-left: 1rem;
       }
@@ -664,10 +703,7 @@ padding-right: 0;
         padding-right: 1rem;     
       } 
 
-      .Section-6-Vertical-Images .main-container{
-
-        gap:10rem;
-      }
+     
 
 
 
@@ -678,6 +714,9 @@ padding-right: 0;
 @media(max-width: 665px){
   .main-container .navbar .nav-lists{
     gap: 1rem;
+  }
+  .Section-6-Vertical-Images{
+    height: 400vh;
   }
 }
 

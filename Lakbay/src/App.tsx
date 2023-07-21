@@ -258,7 +258,7 @@ function App() {
 
         <section className="Section-6-Vertical-Images">
           <div className="main-container grid">
-            <div className="description-container width">
+            <div className="description-container ">
               <div className="img-container hidden">
                 <img src="src/Section-6-Images/whale.jpeg" alt="whale" />
               </div>
@@ -281,12 +281,12 @@ function App() {
               </div>
             </div>
 
-            <div className="TubatahaReefs-container width">
-              <div className="img-container item">
+            <div className="TubatahaReefs-container ">
+              <div className="img-container hidden item">
                 <img src="src/Section-6-Images/reef.jpeg" alt="" />
               </div>
 
-              <div className="tub-description-container item">
+              <div className="tub-description-container hidden item">
                 <div className="title-container">
                   <h1>Tubataha Reefs</h1>
                 </div>
@@ -304,12 +304,12 @@ function App() {
               </div>
             </div>
 
-            <div className="PristineBeach-container width">
-              <div className="img-container-Beach">
+            <div className="PristineBeach-container ">
+              <div className="img-container-Beach hidden">
                 <img src="src/Section-6-Images/beach.jpeg" alt="" />
               </div>
 
-              <div className="beach-description-container">
+              <div className="beach-description-container hidden">
                 <div className="title-container">
                   <h1>Pristine Beaches</h1>
                 </div>
@@ -324,11 +324,11 @@ function App() {
               </div>
             </div>
 
-            <div className="festivities-container width">
-              <div className="festive-img-container link">
+            <div className="festivities-container ">
+              <div className="festive-img-container link hidden">
                 <img src="src/Section-6-Images/festive.jpeg" alt="" />
               </div>
-              <div className="festive-description-container link">
+              <div className="festive-description-container link hidden">
                 <div className="title-container ">
                   <h1>
                     THE <br /> FESTIVITIES
@@ -347,12 +347,12 @@ function App() {
               </div>
             </div>
 
-            <div className="the-rice-container width">
-              <div className="rice-img-container">
+            <div className="the-rice-container ">
+              <div className="rice-img-container hidden">
                 <img src="src/Section-6-Images/rice.jpeg" alt="" />
               </div>
 
-              <div className="rice-description-container">
+              <div className="rice-description-container hidden">
                 <div className="rice-title-container">
                   <h1>THE RICE <br /> TERRACES</h1>
                 </div>
