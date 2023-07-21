@@ -282,7 +282,7 @@ function App() {
             </div>
 
             <div className="TubatahaReefs-container ">
-              <div className="img-container hidden item">
+              <div className="img-container item hidden">
                 <img src="src/Section-6-Images/reef.jpeg" alt="" />
               </div>
 
@@ -370,7 +370,7 @@ function App() {
 
 
           <div className="footer-container">
-            <div className="main-container">
+            <div className="Hmain-container">
               <div className="footer-description-container">
                 <div className="header-container">
                   <h1>START YOUR <br /> JOURNEY TODAY!</h1>

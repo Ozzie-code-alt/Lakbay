@@ -580,7 +580,7 @@ order: 2;
 
 
 
-.Section-6-Vertical-Images  .footer-container{
+.Section-6-Vertical-Images .footer-container{
   background-image: url("src/Section-6-Images/footer.jpeg");
   height: 40vh;
   background-size: cover;
@@ -588,34 +588,39 @@ order: 2;
   background-repeat: no-repeat;
 
 }
-.Section-6-Vertical-Images  .footer-container .main-container{
+.Section-6-Vertical-Images .footer-container .Hmain-container{
   grid-template-columns: repeat(2,1fr);
   justify-content: center;
   align-items: center;
   height: 100%;
+  position: relative;
+  display: grid;
 }
 
-.Section-6-Vertical-Images  .footer-container .main-container .footer-description-container .header-container h1{
+.Section-6-Vertical-Images .footer-container .Hmain-container .footer-description-container .header-container h1{
 color: whitesmoke;
 font-weight: 600;
 font-size: 70px;
 }
 
-.Section-6-Vertical-Images  .footer-container .main-container .footer-description-container .subtxt-container{
+.Section-6-Vertical-Images .footer-container .Hmain-container .footer-description-container .subtxt-container{
   color: black;
 }
 
-.Section-6-Vertical-Images  .footer-container .main-container .footer-description-container{
+.Section-6-Vertical-Images .footer-container .Hmain-container .footer-description-container{
 z-index: 1;
 padding-left: 3rem;
 }
 
-.Section-6-Vertical-Images  .footer-container .main-container .btn-container{
+.Section-6-Vertical-Images .footer-container .Hmain-container .btn-container{
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
-.Section-6-Vertical-Images  .footer-container .main-container .btn-container button{
+.Section-6-Vertical-Images .footer-container .Hmain-container .btn-container button{
   border-radius: 15px;
   padding: 10px 30px;
   border-style:solid;
@@ -624,7 +629,7 @@ padding-left: 3rem;
   background-color: transparent;
   color: whitesmoke;
 }
-.Section-6-Vertical-Images  .footer-container::before{
+.Section-6-Vertical-Images .footer-container::before{
   content: "";
   display: block;
   position: absolute;
@@ -640,7 +645,7 @@ padding-left: 3rem;
 }
 
 
-@media(max-width: 826px ) {
+@media(max-width: 1200px ) {
 
   .Section-6-Vertical-Images .main-container .description-container{
     display: flex;
@@ -658,10 +663,10 @@ padding-right: 0;
       }
 
  .Section-6-Vertical-Images .main-container .TubatahaReefs-container .img-container img{
-  height: 200px;
+  max-width: 100%;
  }
     .main-container .Section-1-MainPage .main-page-container video{
-      height: 50%;
+      height: 90%;
       width: 100%;
     }
     .Section-6-Vertical-Images .main-container .PristineBeach-container{
@@ -671,7 +676,7 @@ padding-right: 0;
       justify-content: center;
     }
     .Section-6-Vertical-Images .main-container .PristineBeach-container .img-container-Beach img{
-      height: 200px;
+      max-width: 100%;
     }
 
     .Section-6-Vertical-Images .main-container .festivities-container{
@@ -682,7 +687,7 @@ padding-right: 0;
     }
 
     .Section-6-Vertical-Images .main-container .festivities-container .festive-img-container img{
-      height: 200px;
+      max-width: 100%;
     }
 
     .Section-6-Vertical-Images .main-container .the-rice-container{
@@ -693,7 +698,7 @@ padding-right: 0;
     }
 
     .Section-6-Vertical-Images .main-container .the-rice-container .rice-img-container img{
-        height: 200px;
+      max-width: 100%;
     }
     .main-container .navbar .lakbay-logo-container{
       padding-left: 1rem;
@@ -703,14 +708,19 @@ padding-right: 0;
         padding-right: 1rem;     
       } 
 
-     
-
-
-
-      .Section-6-Vertical-Images .main-container .description-container .img-container img{
+    
+      .Section-6-Vertical-Images .Hmain-container .description-container .img-container img{
         height: 200px;
         }
+
+        .Section-6-Vertical-Images .footer-container{
+          width: 100%;
+        }
+        .Section-6-Vertical-Images .footer-container .Hmain-container .footer-description-container .header-container h1{
+          font-size: 40px;
+        }
 }
+
 @media(max-width: 665px){
   .main-container .navbar .nav-lists{
     gap: 1rem;
@@ -720,3 +730,7 @@ padding-right: 0;
   }
 }
 
+
+@media (max-width: 390px) {
+  
+}
